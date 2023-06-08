@@ -1,9 +1,20 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+    /*--fuente-principal: 3.8rem;*/
+}
+
 html{
     font-size: 62.5%;
 }
 
 body{
     font-size: 16px; /* 1rem = 10px */
+    font-family: 'Krub', sans-serif; /* En el body la fuente se aplica a todo el diseño */
 }
 
 .titulo {
@@ -13,5 +24,42 @@ body{
 
 .titulo span {
     font-size: 1.5rem;
-    color: blue;
 }
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.nav-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .nav-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.nav-principal a{
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.nav-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+
