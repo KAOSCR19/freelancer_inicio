@@ -151,10 +151,10 @@ h1, h2, h3 {
 
 /* Hero */
 .hero {
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/fondoPrincipal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 410px;
+    height: 510px;
     position: relative;
     margin-bottom: 2rem;
 }
